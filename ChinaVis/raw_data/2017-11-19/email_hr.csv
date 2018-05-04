@@ -1,0 +1,23 @@
+,time,proto,sip,sport,dip,dport,from,to,subject
+21,2017-11-19 09:42:45,smtp,10.64.106.11,1720,10.5.71.60,25,1149@hightech.com,1013@hightech.com;1104@hightech.com;1499@hightech.com;1371@hightech.com;1184@hightech.com;1251@hightech.com;1295@hightech.com;1312@hightech.com;1433@hightech.com;1165@hightech.com;1300@hightech.com;1378@hightech.com;1473@hightech.com;1118@hightech.com;1363@hightech.com;1249@hightech.com;1110@hightech.com,劳动合同
+31,2017-11-19 09:50:34,smtp,14.17.32.47,2248,10.5.71.60,25,379cb0be656173930bc9f564601ee882@foxmail.com,1499@hightech.com,个人资料
+40,2017-11-19 10:05:46,smtp,220.181.90.34,4238,10.5.71.60,25,zhangzhe@sohu.com,1487@hightech.com,有2位猎头查看了您的简历
+43,2017-11-19 10:10:40,smtp,10.64.106.12,2386,10.5.71.60,25,1104@hightech.com,6f226a18298d9aebca7176ea6262c5b2@foxmail.com,面试通知
+46,2017-11-19 10:17:14,smtp,14.17.32.47,2549,10.5.71.60,25,df3f2c784f42419af694ef5363843416@foxmail.com,1295@hightech.com,简历
+47,2017-11-19 10:18:08,smtp,123.125.50.182,3926,10.5.71.60,25,zhangzhe@ask.com,1487@hightech.com,您的简历尚未被查看
+54,2017-11-19 10:21:17,smtp,111.202.126.72,1509,10.5.71.60,25,c4ed744f2963d241685bef44e5cbfc8b@sohu.com,1312@hightech.com,个人资料
+71,2017-11-19 10:41:01,smtp,10.64.106.11,1748,10.5.71.60,25,1149@hightech.com,b2ffe9d81eae7396a363a882569070f7@sina.com,面试通知
+78,2017-11-19 10:45:09,smtp,10.64.106.12,2364,10.5.71.60,25,1104@hightech.com,1013@hightech.com;1499@hightech.com;1371@hightech.com;1184@hightech.com;1251@hightech.com;1295@hightech.com;1312@hightech.com;1433@hightech.com;1165@hightech.com;1300@hightech.com;1378@hightech.com;1473@hightech.com;1118@hightech.com;1363@hightech.com;1249@hightech.com;1110@hightech.com;1149@hightech.com,岗位说明书
+88,2017-11-19 10:56:57,smtp,10.64.106.11,1716,10.5.71.60,25,1149@hightech.com,64c9d8b4c7acb63179088d29086c7dac@sina.com,面试通知
+100,2017-11-19 11:10:48,smtp,10.64.106.3,2594,10.5.71.60,25,1110@hightech.com,926f0d54adf44897ddacd0b7c9889449@sohu.com,新员工必读
+135,2017-11-19 11:50:01,smtp,118.192.64.194,49190,10.5.71.60,25,aaabf0d39951f3e6c3e8a7911df524c2@mail7.lietou-edm.com,1100@hightech.com,【组织发展总监_北京】孙芳_来自猎聘网的候选人
+147,2017-11-19 12:15:08,smtp,14.17.32.47,2455,10.5.71.60,25,0dec05f0f8d40d7d0d1eda570defc297@foxmail.com,1118@hightech.com,简历
+150,2017-11-19 12:16:20,smtp,106.3.154.69,4172,10.5.71.60,25,liuqianqian@tom.com,1376@hightech.com,[职位推送]系统为您匹配了高薪职位，请登录查看！
+152,2017-11-19 12:21:44,smtp,163.177.72.176,2468,10.5.71.60,25,0ceb332450fbec268cb72bfb8edcd6a1@qq.com,1473@hightech.com,简历
+154,2017-11-19 12:27:09,smtp,111.202.126.72,2480,10.5.71.60,25,780e42c8b76a79ace4ff9885e1dc21a5@sohu.com,1363@hightech.com,个人资料
+156,2017-11-19 13:15:36,smtp,113.108.216.17,4281,10.5.71.60,25,Mark@sina.com,1376@hightech.com,Reply：您的简历已被查看，请尽快与我联系！
+187,2017-11-19 14:37:36,smtp,10.64.106.12,3795,10.5.71.60,25,1104@hightech.com,3dc1a7eb878c120edb4338351447e85a@foxmail.com,新员工必读
+209,2017-11-19 15:56:01,smtp,219.142.78.230,2771,10.5.71.60,25,77198227a58c3f7f2aa7adf29e05af55@sina.com,1473@hightech.com,简历
+228,2017-11-19 16:40:09,smtp,111.202.126.72,3038,10.5.71.60,25,a5932e9852d61630c1617357778c204e@sohu.com,1499@hightech.com,个人简历
+270,2017-11-19 18:22:21,smtp,163.177.72.176,2588,10.5.71.60,25,befaa038a9f43f17af28f70a22c0d1ed@qq.com,1104@hightech.com,个人资料
+278,2017-11-19 19:27:41,smtp,131.253.61.84,4171,10.5.71.60,25,wujia@live.com,1376@hightech.com,【电话面试邀请函】

@@ -1,0 +1,11 @@
+,time,proto,sip,sport,dip,dport,from,to,subject
+33,2017-11-04 10:26:37,smtp,10.64.106.17,1679,10.5.71.60,25,1275@hightech.com,1224@hightech.com;1281@hightech.com;1406@hightech.com;1323@hightech.com;1102@hightech.com;1299@hightech.com;1134@hightech.com;1326@hightech.com;1106@hightech.com;1416@hightech.com;1205@hightech.com;1195@hightech.com;1221@hightech.com;1495@hightech.com;1393@hightech.com;1429@hightech.com;1351@hightech.com;1417@hightech.com,分析平台配置
+35,2017-11-04 10:42:47,smtp,10.116.216.71,1661,10.5.71.60,25,work@hightech.com,1087@hightech.com,[ALARM:432]HOST_5XX1a81f35aea74e68d3e691f06178a9837
+36,2017-11-04 11:07:24,smtp,10.116.216.71,2295,10.5.71.60,25,work@hightech.com,1092@hightech.com,[RECOVER:371]HOST_5XX380b15ad9a6c26c908a88d11742f9221
+37,2017-11-04 11:15:11,smtp,10.116.216.71,2290,10.5.71.60,25,work@hightech.com,1092@hightech.com,[ALARM:1359]HOST_5XX201d7378ed0af2702ed8214bfec275a2
+38,2017-11-04 11:26:34,smtp,10.116.216.71,1668,10.5.71.60,25,work@hightech.com,1087@hightech.com,[RECOVER:163]HOST_5XX5794c730c7babb780dcc0a0412f087b4
+40,2017-11-04 11:53:19,smtp,10.116.216.71,2279,10.5.71.60,25,work@hightech.com,1087@hightech.com,[RECOVER:588]HOST_5XX557418d06f67c6b51625320ccb7c3c47
+41,2017-11-04 12:10:25,smtp,10.116.216.71,1923,10.5.71.60,25,work@hightech.com,1087@hightech.com,[ALARM:485]HOST_5XX8ef49f0720bba83dc429e0278d78838e
+42,2017-11-04 13:58:16,smtp,10.64.106.17,2196,10.5.71.60,25,1275@hightech.com,1224@hightech.com;1281@hightech.com;1406@hightech.com;1323@hightech.com;1102@hightech.com;1299@hightech.com;1134@hightech.com;1326@hightech.com;1106@hightech.com;1416@hightech.com;1205@hightech.com;1195@hightech.com;1221@hightech.com;1495@hightech.com;1393@hightech.com;1429@hightech.com;1351@hightech.com;1417@hightech.com,用户手册
+43,2017-11-04 14:17:59,smtp,10.116.216.71,2618,10.5.71.60,25,work@hightech.com,1087@hightech.com,[ALARM:607]HOST_5XXa28ed6771ef2ee7acbd4e4ead4c08fbd
+44,2017-11-04 16:31:37,smtp,10.116.216.71,2201,10.5.71.60,25,work@hightech.com,1087@hightech.com,[ALARM:888]HOST_5XXb499b7611467ec86f59396e04832f228

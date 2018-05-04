@@ -1,0 +1,24 @@
+,time,proto,sip,sport,dip,dport,from,to,subject
+40,2017-11-18 09:45:53,smtp,10.64.106.32,2462,10.5.71.60,25,1371@hightech.com,ffb89b00c5427d91ea814c491bf7e70f@sohu.com,录用通知（接受请回复邮件确认，谢谢！）
+43,2017-11-18 09:57:17,smtp,10.64.106.38,2233,10.5.71.60,25,1295@hightech.com,079eb7e074f29010d0cca09d037bcabf@sohu.com,公司简介
+45,2017-11-18 10:06:59,smtp,14.17.32.47,2551,10.5.71.60,25,8eb6bc99bb0484d9889a12651d4a6ce2@foxmail.com,1300@hightech.com,个人资料
+46,2017-11-18 10:12:30,smtp,219.142.78.230,2207,10.5.71.60,25,b5230343e02d05125715f80678a78050@sina.com,1165@hightech.com,个人资料
+49,2017-11-18 10:16:46,smtp,10.64.106.32,2460,10.5.71.60,25,1371@hightech.com,bfcd1ed5e69b45c7ebf6f301ee75c112@qq.com,录用通知（接受请回复邮件确认，谢谢！）
+95,2017-11-18 11:38:02,smtp,10.64.106.8,2542,10.5.71.60,25,1312@hightech.com,1013@hightech.com;1104@hightech.com;1499@hightech.com;1371@hightech.com;1184@hightech.com;1251@hightech.com;1295@hightech.com;1433@hightech.com;1165@hightech.com;1300@hightech.com;1378@hightech.com;1473@hightech.com;1118@hightech.com;1363@hightech.com;1249@hightech.com;1110@hightech.com;1149@hightech.com,人员档案
+101,2017-11-18 11:53:46,smtp,14.17.32.47,2063,10.5.71.60,25,53be33afb9572eaae8d517da2ed50be2@foxmail.com,1110@hightech.com,个人资料
+108,2017-11-18 12:00:56,smtp,10.64.106.38,2216,10.5.71.60,25,1295@hightech.com,e692d19bcba10948a2115620a2fdd075@qq.com,复试通知
+109,2017-11-18 12:05:51,smtp,10.64.106.8,2545,10.5.71.60,25,1312@hightech.com,1013@hightech.com;1104@hightech.com;1499@hightech.com;1371@hightech.com;1184@hightech.com;1251@hightech.com;1295@hightech.com;1433@hightech.com;1165@hightech.com;1300@hightech.com;1378@hightech.com;1473@hightech.com;1118@hightech.com;1363@hightech.com;1249@hightech.com;1110@hightech.com;1149@hightech.com,招聘信息总结
+119,2017-11-18 12:54:54,smtp,93.191.168.52,4568,10.5.71.60,25,liqiu@3721.net,1487@hightech.com,您的简历尚不完整，请完善。
+125,2017-11-18 14:01:45,smtp,10.64.106.10,3468,10.5.71.60,25,1499@hightech.com,1013@hightech.com;1104@hightech.com;1371@hightech.com;1184@hightech.com;1251@hightech.com;1295@hightech.com;1312@hightech.com;1433@hightech.com;1165@hightech.com;1300@hightech.com;1378@hightech.com;1473@hightech.com;1118@hightech.com;1363@hightech.com;1249@hightech.com;1110@hightech.com;1149@hightech.com,人员档案
+135,2017-11-18 14:42:23,smtp,10.64.106.38,3266,10.5.71.60,25,1295@hightech.com,635526f24d3e3c0fdeb1f4047ae1735a@sohu.com,面试通知
+139,2017-11-18 14:52:08,smtp,10.64.106.6,2900,10.5.71.60,25,1473@hightech.com,1013@hightech.com;1104@hightech.com;1499@hightech.com;1371@hightech.com;1184@hightech.com;1251@hightech.com;1295@hightech.com;1312@hightech.com;1433@hightech.com;1165@hightech.com;1300@hightech.com;1378@hightech.com;1118@hightech.com;1363@hightech.com;1249@hightech.com;1110@hightech.com;1149@hightech.com,招聘信息总结
+150,2017-11-18 15:46:19,smtp,10.64.106.6,2904,10.5.71.60,25,1473@hightech.com,3f38361cc76a91a684ddb636e599eb0d@sina.com,录用通知（接受请回复邮件确认，谢谢！）
+162,2017-11-18 16:35:39,smtp,123.58.177.20,3923,10.5.71.60,25,liuqianqian@163.com,1487@hightech.com,[职位推送]系统为您匹配了高薪职位，请登录查看！
+167,2017-11-18 16:47:06,smtp,10.64.106.8,3579,10.5.71.60,25,1312@hightech.com,2d2b42a59cabf88635d12ad1a87c73d7@qq.com,复试通知
+168,2017-11-18 16:48:53,smtp,10.64.106.10,3437,10.5.71.60,25,1499@hightech.com,e9af22a247d0f597c3eb871e0347389b@sohu.com,复试通知
+169,2017-11-18 17:06:28,smtp,10.64.106.8,3578,10.5.71.60,25,1312@hightech.com,2c17a2eaf728aa216577dfda24ad1c1c@qq.com,复试通知
+171,2017-11-18 17:12:41,smtp,101.236.29.216,3832,10.5.71.60,25,Mark@eyou.com,1487@hightech.com,Reply:您的简历已自动进入人才库。
+175,2017-11-18 17:21:35,smtp,10.64.106.32,3644,10.5.71.60,25,1371@hightech.com,f9d543492fe1166131311eaaa8ee9960@sina.com,复试通知
+178,2017-11-18 17:36:19,smtp,118.192.64.194,54504,10.5.71.60,25,aaabf0d39951f3e6c3e8a7911df524c2@mail7.lietou-edm.com,1192@hightech.com,【销售经理_沈阳】刘锐_来自猎聘网的候选人
+182,2017-11-18 17:51:14,smtp,219.142.78.230,3455,10.5.71.60,25,4c41d241322d5fbd3844464f5acc73ca@sina.com,1013@hightech.com,个人资料
+185,2017-11-18 18:25:20,smtp,123.58.177.104,3854,10.5.71.60,25,mrkey@yeah.net,1487@hightech.com,【电话面试邀请函】
