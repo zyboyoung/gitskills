@@ -20,6 +20,7 @@ def count_web(path):
 		df = pd.read_csv(file_path+'\\weblog.csv')
 		host_column = df['host']
 		host_column = host_column.dropna(axis=0)
+		print(file_path)
 		top_5(host_column)
 		host_csv = pd.concat([host_csv, host_column])
 
@@ -30,11 +31,13 @@ def count_web(path):
 	print(hosts, '\n')
 	return host_csv
 
+
 # 统计每天登录前五名的网址
 def top_5(host_csv):
 	host_list = list(host_csv)
 	hosts = collections.Counter(host_list)
 	print(hosts.most_common(5))
+
 
 # 对所有的host进行三分类
 def classify(host_csv):

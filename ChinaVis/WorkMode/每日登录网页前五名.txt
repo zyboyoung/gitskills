@@ -1,0 +1,61 @@
+
+../raw_data\2017-11-01
+[('email.hightech.com', 1491), ('OA.hightech.com', 634), ('git.hightech.com', 515), ('jira.hightech.com', 427), ('lib01.hightech.com', 338)]
+../raw_data\2017-11-02
+[('email.hightech.com', 1400), ('OA.hightech.com', 651), ('git.hightech.com', 508), ('jira.hightech.com', 429), ('lib01.hightech.com', 342)]
+../raw_data\2017-11-03
+[('email.hightech.com', 1483), ('OA.hightech.com', 634), ('git.hightech.com', 548), ('jira.hightech.com', 473), ('lib01.hightech.com', 315)]
+../raw_data\2017-11-04
+[('email.hightech.com', 14), ('lib02.hightech.com', 9), ('lib01.hightech.com', 8), ('git.hightech.com', 8), ('OA.hightech.com', 4)]
+../raw_data\2017-11-05
+[('email.hightech.com', 102), ('OA.hightech.com', 40), ('git.hightech.com', 17), ('jira.hightech.com', 15), ('www.yahoo.com', 14)]
+../raw_data\2017-11-06
+[('email.hightech.com', 1414), ('OA.hightech.com', 615), ('git.hightech.com', 517), ('jira.hightech.com', 431), ('lib01.hightech.com', 327)]
+../raw_data\2017-11-07
+[('email.hightech.com', 1447), ('OA.hightech.com', 597), ('git.hightech.com', 521), ('jira.hightech.com', 394), ('lib01.hightech.com', 311)]
+../raw_data\2017-11-08
+[('email.hightech.com', 1443), ('OA.hightech.com', 681), ('git.hightech.com', 522), ('jira.hightech.com', 421), ('lib01.hightech.com', 341)]
+../raw_data\2017-11-09
+[('email.hightech.com', 1370), ('OA.hightech.com', 608), ('git.hightech.com', 489), ('jira.hightech.com', 424), ('lib01.hightech.com', 372)]
+../raw_data\2017-11-10
+[('email.hightech.com', 1436), ('OA.hightech.com', 618), ('git.hightech.com', 482), ('jira.hightech.com', 410), ('lib01.hightech.com', 304)]
+../raw_data\2017-11-11
+[('email.hightech.com', 73), ('OA.hightech.com', 33), ('git.hightech.com', 27), ('jira.hightech.com', 22), ('lib02.hightech.com', 16)]
+../raw_data\2017-11-12
+[('email.hightech.com', 137), ('OA.hightech.com', 52), ('www.yahoo.com', 21), ('git.hightech.com', 21), ('www.baidu.com', 18)]
+../raw_data\2017-11-13
+[('email.hightech.com', 1544), ('OA.hightech.com', 652), ('git.hightech.com', 519), ('jira.hightech.com', 428), ('lib01.hightech.com', 345)]
+../raw_data\2017-11-14
+[('email.hightech.com', 1470), ('OA.hightech.com', 634), ('git.hightech.com', 592), ('jira.hightech.com', 409), ('lib01.hightech.com', 377)]
+../raw_data\2017-11-15
+[('email.hightech.com', 1474), ('OA.hightech.com', 614), ('git.hightech.com', 543), ('jira.hightech.com', 439), ('lib01.hightech.com', 322)]
+../raw_data\2017-11-16
+[('email.hightech.com', 1491), ('OA.hightech.com', 678), ('git.hightech.com', 538), ('jira.hightech.com', 428), ('lib01.hightech.com', 340)]
+../raw_data\2017-11-17
+[('email.hightech.com', 1518), ('OA.hightech.com', 637), ('git.hightech.com', 541), ('jira.hightech.com', 416), ('lib01.hightech.com', 338)]
+../raw_data\2017-11-18
+[('email.hightech.com', 139), ('OA.hightech.com', 65), ('git.hightech.com', 28), ('jira.hightech.com', 27), ('lib01.hightech.com', 26)]
+../raw_data\2017-11-19
+[('email.hightech.com', 209), ('OA.hightech.com', 84), ('git.hightech.com', 28), ('www.baidu.com', 24), ('jira.hightech.com', 17)]
+../raw_data\2017-11-20
+[('email.hightech.com', 1420), ('OA.hightech.com', 618), ('git.hightech.com', 531), ('jira.hightech.com', 411), ('lib01.hightech.com', 349)]
+../raw_data\2017-11-21
+[('email.hightech.com', 1391), ('OA.hightech.com', 619), ('git.hightech.com', 505), ('jira.hightech.com', 426), ('lib02.hightech.com', 315)]
+../raw_data\2017-11-22
+[('email.hightech.com', 1582), ('OA.hightech.com', 665), ('git.hightech.com', 516), ('jira.hightech.com', 429), ('lib01.hightech.com', 302)]
+../raw_data\2017-11-23
+[('email.hightech.com', 1497), ('OA.hightech.com', 629), ('git.hightech.com', 534), ('jira.hightech.com', 455), ('lib01.hightech.com', 332)]
+../raw_data\2017-11-24
+[('email.hightech.com', 1477), ('OA.hightech.com', 664), ('git.hightech.com', 527), ('jira.hightech.com', 434), ('lib01.hightech.com', 338)]
+../raw_data\2017-11-25
+[('email.hightech.com', 209), ('OA.hightech.com', 93), ('ai.taobao.com', 26), ('ju.taobao.com', 24), ('lib01.hightech.com', 21)]
+../raw_data\2017-11-26
+[('email.hightech.com', 193), ('OA.hightech.com', 69), ('www.baidu.com', 34), ('lib01.hightech.com', 18), ('git.hightech.com', 18)]
+../raw_data\2017-11-27
+[('email.hightech.com', 1410), ('OA.hightech.com', 602), ('git.hightech.com', 544), ('jira.hightech.com', 456), ('lib01.hightech.com', 337)]
+../raw_data\2017-11-28
+[('email.hightech.com', 1491), ('OA.hightech.com', 667), ('git.hightech.com', 479), ('jira.hightech.com', 438), ('lib01.hightech.com', 344)]
+../raw_data\2017-11-29
+[('email.hightech.com', 1424), ('OA.hightech.com', 627), ('git.hightech.com', 487), ('jira.hightech.com', 450), ('lib01.hightech.com', 330)]
+../raw_data\2017-11-30
+[('email.hightech.com', 1348), ('OA.hightech.com', 594), ('git.hightech.com', 538), ('jira.hightech.com', 403), ('lib01.hightech.com', 366)]
