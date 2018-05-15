@@ -17,7 +17,7 @@ files_path.remove(source_path)
 def count_web(path):
 	host_csv = pd.DataFrame()
 	for file_path in path:
-		df = pd.read_csv(file_path+'\\weblog.csv')
+		df = pd.read_csv(file_path+'/weblog.csv')
 		host_column = df['host']
 		host_column = host_column.dropna(axis=0)
 		print(file_path)
@@ -57,5 +57,11 @@ def classify(host_csv):
 	print(others_host, '\n')
 
 if __name__=='__main__':
+	start_time = time()
+
 	host_csv = count_web(files_path)
 	classify(host_csv)
+
+	end_time = time()
+	print('\n')
+	print('cost time: '+str(end_time - start_time)+' s')

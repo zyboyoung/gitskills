@@ -51,17 +51,56 @@ def find_email():
 
 	return df_from_origin, df_to_origin
 
+# 找出所有leader的收发邮件
+def leader_find_email():
+	file_path = '../raw_data/2017-11-'
+	other_num = list(range(10, 31))
+	num = ['01', '02', '03', '04', '05', '06', '07', '08', '09']
+	num.extend(other_num)
+
+	pd.set_option('display.width', 1000)
+
+
+
+	for id in [1067, 1059, 1068, 1007, 1041, 1013]:
+		df_from_origin = pd.DataFrame(columns=['from', 'to', 'subject'])
+		df_to_origin = pd.DataFrame(columns=['from', 'to', 'subject'])
+		for i in num:
+			df = pd.read_csv(file_path + str(i) + '/new.csv', encoding='gbk')
+			a = df[df['from'].str.contains(str(id) + '@hightech\.com')].drop(
+				['time', 'proto', 'sip', 'sport', 'dip', 'dport'], axis=1)
+			df_from_origin = pd.concat([df_from_origin, a])
+
+			b = df[df['to'].str.contains(str(id) + '@hightech\.com')].drop(
+				['time', 'proto', 'sip', 'sport', 'dip', 'dport'], axis=1)
+			df_to_origin = pd.concat([df_to_origin, b])
+
+		df_from_origin = df_from_origin.drop_duplicates()
+		df_to_origin = df_to_origin.drop_duplicates()
+
+		df_from = df_from_origin['subject'].drop_duplicates()
+		df_to = df_to_origin['subject'].drop_duplicates()
+
+		print('------' + str(id) + '------')
+		print('------from------')
+		print(list(df_from))
+		print('\n')
+		print('------to------')
+		print(list(df_to))
+		print('\n')
+
+
 if __name__=='__main__':
 	start_time = time.time()
 
-	id_all = get_id_all()
-	print(len(id_all))
-
-	id_csv = get_id_csv()
-	print(len(id_csv))
-
-	id_rest = [j for j in id_all if j not in id_csv]
-	print(id_rest)
+	# id_all = get_id_all()
+	# print(len(id_all))
+    #
+	# id_csv = get_id_csv()
+	# print(len(id_csv))
+    #
+	# id_rest = [j for j in id_all if j not in id_csv]
+	# print(id_rest)
 
 	# num = range(10, 31)
 	# for day in num:
@@ -90,6 +129,7 @@ if __name__=='__main__':
 	subject_to = list(set(subject_to))
 
 	print(subject_to)
+	# leader_find_email()
 
 	print('------end------')
 	end_time = time.time()
