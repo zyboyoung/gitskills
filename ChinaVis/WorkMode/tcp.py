@@ -29,21 +29,23 @@ def find_dport(file):
 
 # 统计每天的服务器协议/端口，上下行流量，计算流量和与流量差
 def deal_tcp(file):
-    df_log_info = pd.DataFrame(columns=['proto', 'dport', 'uplink_length', 'downlink_length', 'sumlink_length', 'difflink_length'])
+    df_log_info = pd.DataFrame(columns=['time', 'proto', 'dport', 'uplink_length', 'downlink_length', 'sumlink_length', 'difflink_length'])
     df = pd.read_csv(file)
-    df = df.drop(['stime', 'dtime', 'sip', 'dip', 'sport'], axis=1)
+    df = df.drop(['dtime', 'sip', 'dip', 'sport'], axis=1)
+    time = list(df['stime'].drop_duplicates())[0].split()[0]
 
     i = 0
     for key in ['tds', 'smtp', 'sftp', 'mysql', 'ftp', 'postgresql', 'ssh', 'mongodb']:
         df_key = df[(df['proto']==key)]
         dport = list(df_key['dport'].drop_duplicates())[0]
-        df_log_info.loc[i] = {'proto': key, 'dport': dport, 'uplink_length': df_key.iloc[:, 2].sum(), 'downlink_length': df_key.iloc[:, 3].sum(), 'sumlink_length': df_key.iloc[:, 2].sum()+df_key.iloc[:, 3].sum(), 'difflink_length': df_key.iloc[:, 2].sum()-df_key.iloc[:, 3].sum()}
+        df_log_info.loc[i] = {'time': time, 'proto': key, 'dport': dport, 'uplink_length': df_key.iloc[:, 2].sum(), 'downlink_length': df_key.iloc[:, 3].sum(), 'sumlink_length': df_key.iloc[:, 2].sum()+df_key.iloc[:, 3].sum(), 'difflink_length': df_key.iloc[:, 2].sum()-df_key.iloc[:, 3].sum()}
         i += 1
 
     df_http = df[(df['proto']=='http')]
-    df_log_info.loc[i] = {'proto': 'http', 'dport': 'NA', 'uplink_length': df_http.iloc[:, 2].sum(), 'downlink_length': df_http.iloc[:, 3].sum(), 'sumlink_length': df_http.iloc[:, 2].sum() + df_http.iloc[:, 3].sum(), 'difflink_length': df_http.iloc[:, 2].sum() - df_http.iloc[:, 3].sum()}
+    df_log_info.loc[i] = {'time': time, 'proto': 'http', 'dport': 'NA', 'uplink_length': df_http.iloc[:, 2].sum(), 'downlink_length': df_http.iloc[:, 3].sum(), 'sumlink_length': df_http.iloc[:, 2].sum() + df_http.iloc[:, 3].sum(), 'difflink_length': df_http.iloc[:, 2].sum() - df_http.iloc[:, 3].sum()}
 
     print(df_log_info)
+    return df_log_info
 
 
 if __name__=='__main__':
@@ -56,11 +58,19 @@ if __name__=='__main__':
     other_num = list(range(10, 31))
     num.extend(other_num)
 
+    df = pd.DataFrame(columns=['time', 'proto', 'dport', 'uplink_length', 'downlink_length', 'sumlink_length', 'difflink_length'])
+
     for i in num:
         file = root_path+str(i)+'/tcpLog.csv'
-        print('2017-11-'+str(i))
-        deal_tcp(file)
+        df_log_info = deal_tcp(file)
         print('\n')
+        df = pd.concat([df, df_log_info])
+
+    print(df)
+    try:
+        df.to_csv('tcp统计.csv')
+    except:
+        pass
 
     end_time = time()
     print('cost time: ' + str(end_time - start_time) + ' s')
