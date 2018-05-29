@@ -7,17 +7,18 @@ pd.set_option('display.width', 1000)
 
 
 def cal_tcp(proto):
-    df = pd.read_csv('../WorkMode/tcp统计.csv')
+    df = pd.read_csv('../WorkMode/tcp统计.csv', encoding='gbk', engine='python')
     df_proto = df[(df['proto'] == proto)].drop(['sumlink_length', 'difflink_length', 'dport', 'Unnamed: 0', 'proto', 'time'], axis=1).set_index([list(range(1, 31))])
     print(df_proto)
 
     # 将columns的数据趋势分开显示
     df_proto.plot(subplots=True)
 
-    plt.xticks(range(1, 31))
+    plt.xticks(range(1, 31), df_proto.index)
     plt.legend(loc='lower right')
     plt.title(proto)
     plt.show()
 
 if __name__=='__main__':
-    cal_tcp('ssh')
+    for key in ('tds', 'smtp', 'ssh', 'sftp', 'mysql', 'ftp', 'postgresql', 'mongodb', 'http'):
+        cal_tcp(key)

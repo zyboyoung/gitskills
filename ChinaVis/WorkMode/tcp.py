@@ -38,11 +38,12 @@ def deal_tcp(file):
     for key in ['tds', 'smtp', 'sftp', 'mysql', 'ftp', 'postgresql', 'ssh', 'mongodb']:
         df_key = df[(df['proto']==key)]
         dport = list(df_key['dport'].drop_duplicates())[0]
-        df_log_info.loc[i] = {'time': time, 'proto': key, 'dport': dport, 'uplink_length': df_key.iloc[:, 2].sum(), 'downlink_length': df_key.iloc[:, 3].sum(), 'sumlink_length': df_key.iloc[:, 2].sum()+df_key.iloc[:, 3].sum(), 'difflink_length': df_key.iloc[:, 2].sum()-df_key.iloc[:, 3].sum()}
+
+        df_log_info.loc[i] = {'time': time, 'proto': key, 'dport': dport, 'uplink_length': df_key.iloc[:, 3].sum(), 'downlink_length': df_key.iloc[:, 4].sum(), 'sumlink_length': df_key.iloc[:, 3].sum()+df_key.iloc[:, 4].sum(), 'difflink_length': df_key.iloc[:, 3].sum()-df_key.iloc[:, 4].sum()}
         i += 1
 
     df_http = df[(df['proto']=='http')]
-    df_log_info.loc[i] = {'time': time, 'proto': 'http', 'dport': 'NA', 'uplink_length': df_http.iloc[:, 2].sum(), 'downlink_length': df_http.iloc[:, 3].sum(), 'sumlink_length': df_http.iloc[:, 2].sum() + df_http.iloc[:, 3].sum(), 'difflink_length': df_http.iloc[:, 2].sum() - df_http.iloc[:, 3].sum()}
+    df_log_info.loc[i] = {'time': time, 'proto': 'http', 'dport': 'NA', 'uplink_length': df_http.iloc[:, 3].sum(), 'downlink_length': df_http.iloc[:, 4].sum(), 'sumlink_length': df_http.iloc[:, 3].sum() + df_http.iloc[:, 4].sum(), 'difflink_length': df_http.iloc[:, 3].sum() - df_http.iloc[:, 4].sum()}
 
     print(df_log_info)
     return df_log_info
