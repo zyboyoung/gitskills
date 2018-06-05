@@ -6,6 +6,7 @@ def find_error(proto, file):
     df = pd.read_csv(file)
     df_proto = df[(df['proto']==proto) & (df['state'] == 'error')]
     print(df_proto)
+    df_proto.to_csv('error_login_ana2.csv')
 
     return list(df_proto['dip'])[0], list(df_proto['sip'])[0], list(df_proto['user'])[0],
 
@@ -13,7 +14,9 @@ def find_error(proto, file):
 def find_ip(proto, dip, sip, file):
     df = pd.read_csv(file)
     if not df[(df['dip'] == dip) & (df['sip'] == sip)].empty:
-        print(df[(df['dip'] == dip) & (df['sip'] == sip)])
+        df_new = df[(df['dip'] == dip) & (df['sip'] == sip)]
+        print(df_new)
+        # df_new.to_csv('error_login_ana.csv')
     else:
         print('同样的sip与dip在当天没有其它协议的连接')
         print(df[(df['sip'] == sip)  & (df['proto']!=proto)])
@@ -31,4 +34,4 @@ if __name__=='__main__':
     proto = 'mysql'
     dip, sip, user = find_error(proto, file)
 
-    find_ip(proto, '10.50.50.26', '10.64.105.59', file)
+    find_ip(proto, '10.50.50.26', '10.64.106.17', file)

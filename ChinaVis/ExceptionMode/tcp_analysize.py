@@ -110,6 +110,7 @@ def records_sip(sip):
 	del(df_new)
 
 
+# 统计所有非活跃sip的协议流量
 def odd_sip_all_proto(sip):
 	for key in ['tds', 'smtp', 'sftp', 'mysql', 'ftp', 'postgresql', 'ssh', 'mongodb', 'http']:
 		time = []
@@ -134,10 +135,11 @@ def odd_sip_all_proto(sip):
 			df_new.plot(subplots=True)
 			plt.xticks(range(30), time, fontsize=8)
 			plt.legend(loc='lower right')
-			plt.title(sip+'+'+key)
+			# plt.title(sip+'+'+key)
 			plt.show()
 
 
+# 找出不活跃ip中只访问http协议的ip
 def odd_sip_only_http(sip):
 	for key in ['tds', 'smtp', 'sftp', 'mysql', 'ftp', 'postgresql', 'ssh', 'mongodb']:
 		for i in num:
@@ -150,6 +152,42 @@ def odd_sip_only_http(sip):
 			else:
 				continue
 	return sip
+
+
+# 对于不活跃sip，统计它们访问的网页
+def odd_sip_web(sip):
+	webs = []
+	for i in num:
+		file_root = file_path + str(i)
+		df = pd.read_csv(file_root + '/weblog.csv')
+		df_odd_sip = df[(df['sip'] == sip)]
+		webs.extend(df['host'])
+
+	print('------' + sip + '--------')
+	print(set(webs))
+	print('\n')
+
+
+# 分析mongodb在3号、29号，以及mysql在9号，晚上8点到9点30的下行流量，找出流量最多的sip
+def db_analysis(time, proto):
+	df = pd.read_csv('../raw_data/'+time+'/tcpLog.csv')
+	df_reset = df[(df['proto'] == proto) & (df['uplink_length'] > 0) & (df['stime'] > (time+' 20:00:00')) & (df['stime'] < (time+' 21:30:00')) ].sort_values(by='downlink_length', ascending=False).reset_index(drop=True)
+
+	df_top_10 = df_reset.head(10)
+	print('------'+ time +'日' + proto + '下行流量最多的前十名------')
+	print(df_top_10)
+
+	db_diff = int(df_top_10.loc[0, ['downlink_length']] - df_top_10.loc[1, ['downlink_length']])
+	if db_diff > int(df_top_10.loc[1, ['downlink_length']]) / 10:
+		print('------' + time + '日' + proto + '第一名的下行流量明显偏多------\n')
+	else:
+		print('------' + time + '日' + proto + '第一名的下行流量没有明显偏多------\n')
+	# else:
+	# 	print('------'+ time +'日没有明显偏多的下行流量，推测是记录条数增多------')
+	# 	length = sorted(records(), reverse=True)
+	# 	rank = length.index(len(df_reset))
+	# 	print('------下行流量记录如下，其中'+ time +'日上行流量排名为'+str(rank)+'------')
+	# 	print(length)
 
 
 if __name__=='__main__':
@@ -186,14 +224,26 @@ if __name__=='__main__':
 
 
 	# 对于每个访问http不活跃的sip，统计其访问其它协议的流量
-	# for sip in odd_sips:
-	# 	odd_sip_all_proto(sip)
+	for sip in odd_sips:
+		odd_sip_all_proto(sip)
+
 
 	# 对于每个不活跃的sip，进一步在其中找出不访问其它协议的sip
-	sips_only_http = []
-	for sip in odd_sips:
-		sips_only_http.append(odd_sip_only_http(sip))
-	print(sips_only_http)
+	# sips_only_http = []
+	# for sip in odd_sips:
+	# 	sips_only_http.append(odd_sip_only_http(sip))
+	# print(sips_only_http)
+
+
+	# 分析mongodb在3号、29号，以及mysql在9号，晚上8点到9点30的下行流量，找出流量最多的sip
+	# db_analysis('2017-11-03', 'mongodb')
+	# db_analysis('2017-11-29', 'mongodb')
+	# db_analysis('2017-11-09', 'mysql')
+
+
+	# 统计非活跃sip所访问的web
+	# for sip in odd_sips:
+	# 	odd_sip_web(sip)
 
 
 	end_time = time()
